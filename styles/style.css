@@ -1,0 +1,311 @@
+
+:root {
+  --cor-primaria: #60401e;
+  --cor-secundaria: #ffdc8a;
+  --cor-texto: #582205;
+  --fonte-titulo: 'Candal', sans-serif;
+  --fonte-texto: 'Cantarell', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  color: var(--cor-texto);
+  background-color: #ebe7e7;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* ==============================
+   HEADER / MENU FIXO
+============================== */
+
+.menu {
+  background-color: var(--cor-secundaria);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.menu-links {
+  display: flex;
+  gap: 25px;
+}
+
+.menu-links a {
+  font-family: var(--fonte-titulo);
+  font-size: 18px;
+  color: var(--cor-texto);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu-links a:hover {
+  color: var(--cor-primaria);
+}
+
+.menu-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon-btn img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s;
+}
+
+.icon-btn:hover img {
+  transform: scale(1.1);
+}
+
+/* ==============================
+   SEÇÕES PRINCIPAIS
+============================== */
+
+main {
+  margin-top: 120px;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-texto);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ==============================
+   QUEM SOMOS
+============================== */
+
+.quem-somos .content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.quem-somos .imagem-grande {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.quem-somos .imagem-lateral {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.quem-somos .texto {
+  max-width: 500px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* ==============================
+   DESTAQUES
+============================== */
+
+.grid-destaques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  text-align: center;
+}
+
+.grid-destaques img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.grid-destaques img:hover {
+  transform: scale(1.05);
+}
+
+.grid-destaques p {
+  font-family: var(--fonte-titulo);
+  margin-top: 10px;
+}
+
+/* ==============================
+   HISTÓRIA
+============================== */
+
+.historia-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  gap: 20px;
+}
+
+.historia-content img {
+  width: 250px;
+  border-radius: 15px;
+}
+
+.historia-content p {
+  max-width: 900px;
+}
+
+/* ==============================
+   OFERECEMOS
+============================== */
+
+.servicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.servico img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.servico h3 {
+  font-family: var(--fonte-titulo);
+  margin-top: 10px;
+}
+
+/* ==============================
+   LOCALIZAÇÃO
+============================== */
+
+.localizacao .mapa-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.mapa {
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.enderecos {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+.enderecos li {
+  margin-bottom: 10px;
+}
+
+/* ==============================
+   RODAPÉ
+============================== */
+
+.rodape {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  padding: 30px 20px 20px;
+  text-align: left;
+}
+
+.rodape-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  gap: 30px;
+}
+
+.logo-footer {
+  width: 120px;
+  height: auto;
+}
+
+.rodape h3 {
+  font-family: var(--fonte-titulo);
+  margin-bottom: 10px;
+}
+
+.rodape p {
+  font-size: 15px;
+}
+
+/* .rodape img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+} */
+.rodape .contato img,
+.rodape .redes img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.logo-footer {
+  width: 150px;
+  height: auto;
+}
+.copy {
+  font-size: 14px;
+  margin-top: 10px;
+  color: var(--cor-primaria);
+}
+
+/* ==============================
+   RESPONSIVIDADE
+============================== */
+
+@media (max-width: 768px) {
+  .menu-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .quem-somos .content {
+    flex-direction: column;
+  }
+
+  .mapa {
+    width: 100%;
+  }
+}
