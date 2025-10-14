@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio | Pão & Café</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/cardapio.css">
+  <link href="https://fonts.googleapis.com/css2?family=Candal&family=Cantarell&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="menu">
+    <div class="menu-container">
+      <img src="images/logo.png" alt="Logo Pão & Café" class="logo">
+      <nav class="menu-links">
+        <a href="index.html">Página Inicial</a>
+        <a href="cardapio.html" class="active">Cardápio</a>
+        <a href="index.html#localizacao">Localização</a>
+        <a href="#rodape">Contato</a>
+      </nav>
+      <div class="menu-icons">
+        <a href="carrinho-de-compras.html" class="icon-btn" aria-label="Cesta"><img src="images/cesta.png" alt=""></a>
+        <a href="login.html" class="icon-btn" aria-label="Usuário"><img src="images/usuario.png" alt=""></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro-cardapio">
+      <h1>Cardápio Pão & Café</h1>
+      <p>Descubra nossas delícias artesanais preparadas com ingredientes selecionados e muito carinho.</p>
+    </section>
+
+    <section class="categoria" id="paes-croissants">
+      <h2>🥐 Pães e Croissants</h2>
+      <div class="grid-produtos">
+        <div class="produto">
+          <img src="images/croissant-manteiga.png" alt="Croissant de manteiga" loading="lazy">
+          <h3>Croissant de Manteiga</h3>
+          <p>Massa folhada leve e amanteigada, perfeita para o café da manhã.</p>
+          <span class="preco">R$ 6,00</span><br>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+          <img src="images/pao-frances.png" alt="Pão francês" loading="lazy">
+          <h3>Pão Francês</h3>
+          <p>Crocante por fora e macio por dentro, assado na hora.</p>
+          <span class="preco">R$ 1,20</span><br>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+          <img src="images/pao-integral.png" alt="Pão integral" loading="lazy">
+          <h3>Pão Integral</h3>
+          <p>Feito com farinhas integrais e sementes selecionadas.</p>
+          <span class="preco">R$ 8,00</span><br>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+          <img src="images/mini-baguete.png" alt="Mini baguete" loading="lazy">
+          <h3>Mini Baguete</h3>
+          <p>Ideal para lanches e sanduíches leves.</p>
+          <span class="preco">R$ 5,50</span><br>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="categoria" id="bolos-doces">
+      <h2>🍰 Bolos e Doces</h2>
+      <div class="grid-produtos">
+        <div class="produto">
+          <img src="images/bolo-chocolate.png" alt="Bolo de chocolate" loading="lazy">
+          <h3>Bolo de Chocolate</h3>
+          <p>Tradicional e irresistível, com cobertura cremosa.</p>
+          <span class="preco">R$ 9,00</span><br>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+          <img src="images/bolo-cenoura.png" alt="Bolo de cenoura" loading="lazy">
+          <h3>Bolo de Cenoura</h3>
+          <p>Com calda de chocolate e textura fofinha.</p>
+          <span class="preco">R$ 8,50</span><br>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+          <img src="images/torta-morango.png" alt="Torta de morango" loading="lazy">
+          <h3>Torta de Morango</h3>
+          <p>Base crocante, creme leve e morangos frescos.</p>
+          <span class="preco">R$ 12,00</span><br>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+          <img src="images/pastel-nata.png" alt="Pastel de nata" loading="lazy">
+          <h3>Pastel de Nata</h3>
+          <p>Clássico português com massa folhada e creme suave.</p>
+          <span class="preco">R$ 7,00</span><br>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="categoria" id="cafes-bebidas">
+      <h2>☕ Cafés e Bebidas</h2>
+      <div class="grid-produtos">
+        <div class="produto">
+          <img src="images/cafe-expresso.png" alt="Café expresso" loading="lazy">
+          <h3>Café Expresso</h3>
+          <p>Grãos selecionados e aroma intenso, preparado na hora.</p>
+          <span class="preco">R$ 5,00</span><br>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+          <img src="images/cappuccino.png" alt="Cappuccino" loading="lazy">
+          <h3>Cappuccino</h3>
+          <p>Equilíbrio perfeito entre café, leite e chocolate.</p>
+          <span class="preco">R$ 7,50</span><br>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+          <img src="images/suco-laranja.png" alt="Suco de laranja" loading="lazy">
+          <h3>Suco de Laranja</h3>
+          <p>Natural e refrescante, feito com frutas selecionadas.</p>
+          <span class="preco">R$ 6,50</span><br>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+          <img src="images/chocolate-quente.png" alt="Chocolate quente" loading="lazy">
+          <h3>Chocolate Quente</h3>
+          <p>Cremoso e aconchegante, ideal para dias frios.</p>
+          <span class="preco">R$ 8,00</span><br>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape" class="rodape">
+    <div class="rodape-content">
+      <img src="images/logo-footer.png" alt="Logo Pão & Café" class="logo-footer">
+      <div class="contato">
+        <h3>Fale Conosco</h3>
+        <p><img src="images/whatsapp.png" alt="Whatsapp"> (84)986244587</p>
+        <p><img src="images/phone.png" alt="Telefone"> 33332222</p>
+        <p><img src="images/email.png" alt="E-mail"> paoecafe@gmail.com</p>
+      </div>
+      <div class="redes">
+        <h3>Nossas Redes</h3>
+        <p><img src="images/instagram.png" alt="Instagram"> @paoecafe</p>
+        <p><img src="images/facebook.png" alt="Facebook"> /padariapaoecafe</p>
+        <p><img src="images/x.png" alt="X"> @paoecafe</p>
+      </div>
+    </div>
+    <p class="copy">Padaria Pão & Café © 2025 | Desenvolvido por Equipe Sete</p>
+  </footer>
+
+  <script>
+    // Rolagem suave entre seções — ignora links vazios
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const destino = this.getAttribute('href');
+        if (!destino || destino === '#') return;
+        const el = document.querySelector(destino);
+        if (!el) return;
+        e.preventDefault();
+        el.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>

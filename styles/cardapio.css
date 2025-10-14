@@ -1,0 +1,105 @@
+/* ==========================
+   Seção de Introdução do Cardápio
+   ========================== */
+
+.intro-cardapio {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.intro-cardapio h1 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-principal);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem 0;
+}
+
+.intro-cardapio p {
+  color: var(--cor-texto);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ==========================
+   Grade de Produtos
+   ========================== */
+
+.categoria {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.categoria h2 {
+  text-align: center;
+  font-family: var(--fonte-titulo);
+  color: var(--cor-principal);
+  margin-bottom: 2rem;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.produto {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.produto img {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.produto h3 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-principal);
+  margin-bottom: 0.5rem;
+}
+
+.produto p {
+  font-size: 0.95rem;
+  color: var(--cor-texto);
+  margin-bottom: 0.5rem;
+}
+
+.preco {
+  font-weight: bold;
+  color: var(--cor-secundaria);
+}
+
+/* ==========================
+   Responsividade
+   ========================== */
+
+@media (max-width: 768px) {
+  .intro-cardapio h1 {
+    font-size: 1.5rem;
+    padding-top: 7.5rem;
+  }
+
+  .categoria h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .produto {
+    padding: 1rem;
+  }
+}

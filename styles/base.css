@@ -1,0 +1,231 @@
+/* ==========================
+   Estilo global
+   ========================== */
+
+   :root {
+  --cor-principal: #60401e;
+  --cor-secundaria: #ffdc8a;
+  --cor-fundo: #ebe7e7;
+  --cor-hover: #73706e;
+  --cor-texto: #582205;
+  --fonte-titulo: 'Candal', sans-serif;
+  --fonte-texto: 'Cantarell', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--cor-secundaria);
+}
+
+/* ==============================
+   Seções Principais
+============================== */
+
+main {
+  flex: 1;
+  padding-top: 7rem;
+}
+
+section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-texto);
+  text-align: center;
+}
+
+/* ==========================
+   Cabeçalho e Menu
+   ========================== */
+
+.menu {
+  background-color: var(--cor-secundaria);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.menu-links {
+  display: flex;
+  gap: 25px;
+}
+
+.menu-links a {
+  font-family: var(--fonte-titulo);
+  font-size: 18px;
+  color: var(--cor-texto);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu-links a:hover {
+  color: var(--cor-hover);
+  transform: scale(1.1);
+}
+
+.menu-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon-btn img {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-btn:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+/* ==============================
+   Botões
+============================== */
+.btn-comprar {
+  background-color: var(--cor-principal);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background-color: var(--cor-hover);
+}
+
+/* ==============================
+   Rodapé
+============================== */
+
+.rodape {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  padding: 10px;
+  text-align: left;
+}
+
+.rodape-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto 0;
+  gap: 30px;
+}
+
+.logo-footer {
+  width: 120px;
+  height: auto;
+}
+
+.rodape h3 {
+  font-family: var(--fonte-titulo);
+}
+
+.rodape p {
+  font-size: 15px;
+}
+
+.rodape .contato img,
+.rodape .redes img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.rodape .contato p,
+.rodape .redes p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.copy {
+  font-size: 14px;
+  color: var(--cor-primaria);
+  text-align: center;
+}
+
+/* ==============================
+   Responsividade
+============================== */
+
+@media (max-width: 768px) {
+  .menu-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .menu-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    padding: 0.5rem 1rem;
+  }
+
+  .menu-links a {
+    font-size: 0.9rem;
+  }
+}

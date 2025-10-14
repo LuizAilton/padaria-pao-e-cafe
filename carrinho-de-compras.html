@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/carrinho-de-compras.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Candal&family=Cantarell&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="menu">
+    <div class="menu-container">
+      <img src="images/logo.png" alt="Logo Pão & Café" class="logo">
+      <nav class="menu-links">
+        <a href="index.html">Página Inicial</a>
+        <a href="cardapio.html" class="active">Cardápio</a>
+        <a href="index.html#localizacao">Localização</a>
+        <a href="#rodape">Contato</a>
+      </nav>
+      <div class="menu-icons">
+        <a href="carrinho-de-compras.html" class="icon-btn" aria-label="Cesta"><img src="images/cesta.png" alt=""></a>
+        <a href="login.html" class="icon-btn" aria-label="Usuário"><img src="images/usuario.png" alt=""></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="conteudo">
+        <h2>Meu Carrinho de Compras</h2>
+    </section>
+
+    <section class="tabela-carrinho">
+      <table id="tabelaCarrinho">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Descrição</th>
+            <th>Quantidade</th>
+            <th>Preço Unitário</th>
+            <th>Total</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="images/croissant.png" alt="Croissant" class="img-produto"></td>
+            <td>Croissant de Manteiga</td>
+            <td><input type="number" value="2" min="1"></td>
+            <td data-preco="6.00">R$ 6,00</td>
+            <td class="subtotal">R$ 12,00</td>
+            <td><button class="btn-excluir">Excluir</button></td>
+          </tr>
+          <tr>
+            <td><img src="images/cafe-expresso.png" alt="Café Expresso" class="img-produto"></td>
+            <td>Café Expresso</td>
+            <td><input type="number" value="1" min="1"></td>
+            <td data-preco="4.50">R$ 4,50</td>
+            <td class="subtotal">R$ 4,50</td>
+            <td><button class="btn-excluir">Excluir</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="resumo-carrinho">
+      <div class="totais">
+        <p><strong>Quantidade de produtos:</strong> <span id="qtdTotal">3</span></p>
+        <p><strong>Valor total:</strong> <span id="valorTotal">R$ 16,50</span></p>
+      </div>
+      <div class="acoes">
+        <button id="btnLimpar" class="btn-limpar">Esvaziar Carrinho</button>
+        <button class="btn-fechar">Fechar Pedido</button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape" class="rodape">
+    <div class="rodape-content">
+      <img src="images/logo-footer.png" alt="Logo Pão & Café" class="logo-footer">
+      <div class="contato">
+        <h3>Fale Conosco</h3>
+        <p><img src="images/whatsapp.png" alt="Whatsapp"> (84)986244587</p>
+        <p><img src="images/phone.png" alt="Telefone"> 33332222</p>
+        <p><img src="images/email.png" alt="E-mail"> paoecafe@gmail.com</p>
+      </div>
+      <div class="redes">
+        <h3>Nossas Redes</h3>
+        <p><img src="images/instagram.png" alt="Instagram"> @paoecafe</p>
+        <p><img src="images/facebook.png" alt="Facebook"> /padariapaoecafe</p>
+        <p><img src="images/x.png" alt="X"> @paoecafe</p>
+      </div>
+    </div>
+    <p class="copy">Padaria Pão & Café © 2025 | Desenvolvido por Equipe Sete</p>
+  </footer>
+
+  <script>
+    // Função para atualizar os totais
+    function atualizarTotais() {
+      const linhas = document.querySelectorAll("#tabelaCarrinho tbody tr");
+      let totalGeral = 0;
+      let totalItens = 0;
+
+      linhas.forEach(linha => {
+        const qtd = parseInt(linha.querySelector("input[type='number']").value);
+        const preco = parseFloat(linha.querySelector("td[data-preco]").dataset.preco);
+        const subtotal = qtd * preco;
+        linha.querySelector(".subtotal").textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
+        totalGeral += subtotal;
+        totalItens += qtd;
+      });
+
+      document.getElementById("qtdTotal").textContent = totalItens;
+      document.getElementById("valorTotal").textContent = `R$ ${totalGeral.toFixed(2).replace('.', ',')}`;
+    }
+
+    // Atualiza ao mudar quantidade
+    document.querySelectorAll("#tabelaCarrinho input[type='number']").forEach(input => {
+      input.addEventListener("change", atualizarTotais);
+    });
+
+    // Excluir item
+    document.querySelectorAll(".btn-excluir").forEach(botao => {
+      botao.addEventListener("click", e => {
+        e.target.closest("tr").remove();
+        atualizarTotais();
+      });
+    });
+
+    // Esvaziar carrinho
+    document.getElementById("btnLimpar").addEventListener("click", () => {
+      document.querySelector("#tabelaCarrinho tbody").innerHTML = "";
+      atualizarTotais();
+    });
+  </script>
+</body>
+</html>
