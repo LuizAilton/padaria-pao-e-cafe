@@ -100,7 +100,7 @@
 }
 
 .btn-fechar:hover {
-  background-color: darken(var(--cor-principal), 5%);
+  background-color: var(--cor-hover);
 }
 
 /* ==== RESUMO ==== */

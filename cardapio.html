@@ -153,18 +153,7 @@
     <p class="copy">Padaria Pão & Café © 2025 | Desenvolvido por Equipe Sete</p>
   </footer>
 
-  <script>
-    // Rolagem suave entre seções — ignora links vazios
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const destino = this.getAttribute('href');
-        if (!destino || destino === '#') return;
-        const el = document.querySelector(destino);
-        if (!el) return;
-        e.preventDefault();
-        el.scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
+  <script src="scripts/cardapio.js"></script>
+    
 </body>
 </html>
