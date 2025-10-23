@@ -25,5 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Se tudo estiver certo
     alert("Login validado com sucesso!");
     console.log({ email, senha });
+
+    form.submit();
   });
 });
