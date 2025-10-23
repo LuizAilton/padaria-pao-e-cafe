@@ -1,22 +1,23 @@
-  const form = document.getElementById('cadastroSenha');
+  const form = document.getElementById('cadastrosenha');
   const senha = document.getElementById('senha');
-  const confirmaSenha = document.getElementById('confirmaSenha');
+  const confirmasenha = document.getElementById('confirmasenha');
   const erro = document.getElementById('erro');
 
   form.addEventListener('submit', function(event) {
     // impede envio do formulário
     event.preventDefault();
 
-    if (senha.value !== confirmaSenha.value) {
-      erro.textContent = "As senhas não coincidem!";
-      confirmaSenha.style.borderColor = "red";
+    if (senha.value !== confirmasenha.value) {
+      erro.textContent = "As senhas não são iguais!";
+      erro.style.color = "red";
+      confirmasenha.style.borderColor = "red";
     } else {
       erro.textContent = "";
-      confirmaSenha.style.borderColor = "green";
+      confirmasenha.style.borderColor = "green";
       erro.style.color = "green";
       alert("Cadastro realizado com sucesso!");
 
-      form.reset();
+      form.submit();
     }
   });
 
