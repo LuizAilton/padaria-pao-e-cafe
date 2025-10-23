@@ -35,10 +35,19 @@
       <form>
         <input type="text" placeholder="Nome Completo" required>
         <input type="text" placeholder="CPF ou CNPJ" required>
-        <input type="date" placeholder="Data de Nascimento" required>
+        <input type="date" title="Data de Nascimento" required>
         <input type="email" placeholder="E-mail" required>
         <input type="tel" placeholder="Telefone" required>
-        <input type="password" placeholder="Senha" required>
+        <div class="campo-senha">
+          <input type="password" id="senha" placeholder="Senha" required>
+          <button type="button" class="mostrar-senha" data-target="senha">🔒</button>
+        </div>
+        <!-- <input type="password" placeholder="Senha" required> -->
+        <!-- <input type="password" placeholder="Repetir senha" required> -->
+        <div class="campo-senha">
+          <input type="password" id="ConfirmaSenha" placeholder="Confirme a senha" required>
+          <button type="button" class="mostrar-senha" data-target="ConfirmaSenha">🔒</button>
+        </div>
         <button type="submit">Cadastrar</button>
       </form>
       <p>Já tem uma conta? <a href="login.html">Entrar</a></p>
@@ -64,7 +73,8 @@
     </div>
     <p class="copy">Padaria Pão & Café © 2025 | Desenvolvido por Equipe Sete</p>
   </footer>
-
   
+  <script src="scripts/mostra-senha.js"></script>
+
 </body>
 </html>

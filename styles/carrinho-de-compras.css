@@ -8,7 +8,7 @@
   font-size: 1.8rem;
 }
 
-/* ==== TABELA ==== */
+/* Tabela */
 
 .tabela-carrinho {
   padding: 1rem 1rem;
@@ -46,7 +46,7 @@
   border-radius: 8px;
 }
 
-/* ==== INPUT QUANTIDADE ==== */
+/* Input Quantidade */
 
 .resumo-carrinho {
   padding: 2rem 1rem;
@@ -60,7 +60,8 @@
   text-align: center;
 }
 
-/* ==== BOTÕES ==== */
+/* Botões */
+
 .btn-excluir {
   background-color: #d9534f;
   color: #fff;
@@ -103,7 +104,8 @@
   background-color: var(--cor-hover);
 }
 
-/* ==== RESUMO ==== */
+/* Resumo */
+
 .resumo-carrinho {
   margin-bottom: 2rem;
   display: flex;
@@ -126,7 +128,8 @@
   gap: 1rem;
 }
 
-/* ==== RESPONSIVIDADE ==== */
+/* Responsividade */
+
 @media (max-width: 768px) {
   .tabela-carrinho table, 
   .tabela-carrinho thead, 

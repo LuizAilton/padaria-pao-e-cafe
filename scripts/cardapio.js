@@ -1,4 +1,5 @@
-// Rolagem suave entre seções — ignora links vazios
+// Rolagem suave entre seções
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         const destino = this.getAttribute('href');

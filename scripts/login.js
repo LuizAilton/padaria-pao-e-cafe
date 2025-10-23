@@ -7,21 +7,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = form.elements[0].value.trim();
     const senha = form.elements[1].value;
 
-    // === Validações básicas ===
+    // Validações básicas
+
     if (!email || !senha) {
       alert("Por favor, preencha todos os campos!");
       return;
     }
 
     // Valida e-mail
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       alert("Digite um e-mail válido!");
       return;
     }
 
-    // Se tudo estiver certo:
-    alert("Login validado com sucesso! (Integração com backend em breve)");
+    // Se tudo estiver certo
+    alert("Login validado com sucesso!");
     console.log({ email, senha });
   });
 });

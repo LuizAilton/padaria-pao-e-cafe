@@ -1,4 +1,5 @@
 // Função para atualizar os totais
+
     function atualizarTotais() {
       const linhas = document.querySelectorAll("#tabelaCarrinho tbody tr");
       let totalGeral = 0;
@@ -18,11 +19,13 @@
     }
 
     // Atualiza ao mudar quantidade
+
     document.querySelectorAll("#tabelaCarrinho input[type='number']").forEach(input => {
       input.addEventListener("change", atualizarTotais);
     });
 
     // Excluir item
+
     document.querySelectorAll(".btn-excluir").forEach(botao => {
       botao.addEventListener("click", e => {
         e.target.closest("tr").remove();
@@ -31,6 +34,7 @@
     });
 
     // Esvaziar carrinho
+    
     document.getElementById("btnLimpar").addEventListener("click", () => {
       document.querySelector("#tabelaCarrinho tbody").innerHTML = "";
       atualizarTotais();

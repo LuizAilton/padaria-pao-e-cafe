@@ -6,6 +6,7 @@
   <title>Pão & Café</title>
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="styles/nova-senha.css">
   <link href="https://fonts.googleapis.com/css2?family=Candal&family=Cantarell&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -29,7 +30,24 @@
   </header>
 
   <main>
-    
+    <section class="login-section">
+    <div class="login-container">
+      <h1>Alteração de Senha</h1>
+      <form id="cadastroSenha">
+        <div class="campo-senha">
+          <input type="password" id="senha" placeholder="Nova Senha" required>
+          <button type="button" class="mostrar-senha" data-target="senha">🔒</button>
+        </div>
+        <div class="campo-senha">
+          <input type="password" id="confirmaSenha" placeholder="Confirme a Senha" required>
+          <button type="button" class="mostrar-senha" data-target="confirmaSenha">🔒</button>
+        </div>
+        <button type="submit">Confirmar</button>
+        <p id="erro" style="color: red;"></p>
+      </form>
+      <p>Já tem uma conta? <a href="login.html">Entrar</a></p>
+    </div>
+  </section>
   </main>
 
   <footer id="rodape" class="rodape">
@@ -51,6 +69,8 @@
     <p class="copy">Padaria Pão & Café © 2025 | Desenvolvido por Equipe Sete</p>
   </footer>
 
+  <script src="scripts/valida-senha.js"></script>
+  <script src="scripts/mostra-senha.js"></script>
   
 </body>
 </html>

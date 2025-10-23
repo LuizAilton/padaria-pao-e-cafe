@@ -1,6 +1,4 @@
-/* ==========================
-   Estilo global
-   ========================== */
+/* Estilo global */
 
    :root {
   --cor-principal: #60401e;
@@ -49,9 +47,7 @@ a:hover {
   color: var(--cor-secundaria);
 }
 
-/* ==============================
-   Seções Principais
-============================== */
+/* Seções Principais */
 
 main {
   flex: 1;
@@ -69,9 +65,7 @@ h2 {
   text-align: center;
 }
 
-/* ==========================
-   Cabeçalho e Menu
-   ========================== */
+/* Cabeçalho e Menu */
 
 .menu {
   background-color: var(--cor-secundaria);
@@ -130,9 +124,8 @@ h2 {
   transition: transform 0.3s;
 }
 
-/* ==============================
-   Botões
-============================== */
+/* Botões */
+
 .btn-comprar {
   background-color: var(--cor-principal);
   color: #fff;
@@ -148,9 +141,7 @@ h2 {
   background-color: var(--cor-hover);
 }
 
-/* ==============================
-   Rodapé
-============================== */
+/* Rodapé */
 
 .rodape {
   background-color: var(--cor-secundaria);
@@ -203,9 +194,7 @@ h2 {
   text-align: center;
 }
 
-/* ==============================
-   Responsividade
-============================== */
+/* Responsividade */
 
 @media (max-width: 768px) {
   .menu-container {

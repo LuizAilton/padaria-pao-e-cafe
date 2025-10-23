@@ -1,6 +1,4 @@
-/* ==========================
-   Seção de Introdução do Cardápio
-   ========================== */
+/* Seção de Introdução do Cardápio */
 
 .intro-cardapio {
   text-align: center;
@@ -22,9 +20,7 @@
   margin: 0 auto;
 }
 
-/* ==========================
-   Grade de Produtos
-   ========================== */
+/* Grade de Produtos */
 
 .categoria {
   padding: 2rem 1rem;
@@ -83,9 +79,7 @@
   color: var(--cor-secundaria);
 }
 
-/* ==========================
-   Responsividade
-   ========================== */
+/* Responsividade */
 
 @media (max-width: 768px) {
   .intro-cardapio h1 {

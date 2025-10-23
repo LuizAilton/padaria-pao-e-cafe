@@ -1,6 +1,4 @@
-/* ==============================
-   Quem Somos
-============================== */
+/* Quem Somos */
 
 .quem-somos {
   padding: 2rem 1rem;
@@ -30,9 +28,7 @@
   font-size: 18px;
 }
 
-/* ==============================
-   Destaques
-============================== */
+/* Destaques */
 
 .destaques {
   padding: 2rem 1rem;
@@ -63,9 +59,7 @@
   margin-top: 10px;
 }
 
-/* ==============================
-   História
-============================== */
+/* História */
 
 .historia {
   padding: 2rem 1rem;
@@ -88,9 +82,7 @@
   max-width: 900px;
 }
 
-/* ==============================
-   Oferecemos
-============================== */
+/* Oferecemos */
 
 .oferecemos {
   padding: 2rem 1rem;
@@ -119,9 +111,7 @@
   transition: transform 0.3s;
 }
 
-/* ==============================
-   Localização
-============================== */
+/* Localização */
 
 .localizacao {
   padding: 2rem 1rem;
@@ -151,9 +141,7 @@
   margin-bottom: 10px;
 }
 
-/* ==============================
-   Responsividade
-============================== */
+/* Responsividade */
 
 @media (max-width: 768px) {
   .quem-somos .content {
@@ -161,6 +149,6 @@
   }
 
   .mapa {
-    width: 100%;
+    width: 80%;
   }
 }
