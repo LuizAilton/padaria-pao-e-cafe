@@ -44,20 +44,28 @@
         </thead>
         <tbody>
           <tr>
-            <td><img src="images/croissant.png" alt="Croissant" class="img-produto"></td>
-            <td>Croissant de Manteiga</td>
-            <td><input type="number" value="2" min="1"></td>
-            <td data-preco="6.00">R$ 6,00</td>
-            <td class="subtotal">R$ 12,00</td>
-            <td><button class="btn-excluir">Excluir</button></td>
+            <td data-th="Produto"><img src="images/croissant.png" alt="Croissant" class="img-produto"></td>
+            <td data-th="Descrição">Croissant de Manteiga</td>
+            <td data-th="Quantidade"><input type="number" value="2" min="1"></td>
+            <td data-th="Preço Unitário" data-preco="6.00">R$ 6,00</td>
+            <td data-th="Total" class="subtotal">R$ 12,00</td>
+            <td data-th="Ações"><button class="btn-excluir">Excluir</button></td>
           </tr>
           <tr>
-            <td><img src="images/cafe-expresso.png" alt="Café Expresso" class="img-produto"></td>
-            <td>Café Expresso</td>
-            <td><input type="number" value="1" min="1"></td>
-            <td data-preco="4.50">R$ 4,50</td>
-            <td class="subtotal">R$ 4,50</td>
-            <td><button class="btn-excluir">Excluir</button></td>
+            <td data-th="Produto"><img src="images/cafe-expresso.png" alt="Café Expresso" class="img-produto"></td>
+            <td data-th="Descrição">Café Expresso</td>
+            <td data-th="Quantidade"><input type="number" value="1" min="1"></td>
+            <td data-th="Preço Unitário" data-preco="4.50">R$ 4,50</td>
+            <td data-th="Total" class="subtotal">R$ 4,50</td>
+            <td data-th="Ações"><button class="btn-excluir">Excluir</button></td>
+          </tr>
+          <tr>
+            <td data-th="Produto"><img src="images/bolo-cenoura.png" alt="Bolo de Cenoura" class="img-produto"></td>
+            <td data-th="Descrição">Bolo de Cenoura</td>
+            <td data-th="Quantidade"><input type="number" value="1" min="1"></td>
+            <td data-th="Preço Unitário" data-preco="60,00">R$ 60,00</td>
+            <td data-th="Total" class="subtotal">R$ 60,00</td>
+            <td data-th="Ações"><button class="btn-excluir">Excluir</button></td>
           </tr>
         </tbody>
       </table>
@@ -65,8 +73,8 @@
 
     <section class="resumo-carrinho">
       <div class="totais">
-        <p><strong>Quantidade de produtos:</strong> <span id="qtdTotal">3</span></p>
-        <p><strong>Valor total:</strong> <span id="valorTotal">R$ 16,50</span></p>
+        <p><strong>Quantidade de produtos:</strong> <span id="qtdTotal">4</span></p>
+        <p><strong>Valor total:</strong> <span id="valorTotal">R$ 76,50</span></p>
       </div>
       <div class="acoes">
         <button id="btnLimpar" class="btn-limpar">Esvaziar Carrinho</button>
